@@ -17,7 +17,6 @@ default_args = {
 }
 
 # Define the DAG
-# Define the DAG
 with DAG(
     dag_id='refresh_unified_view',
     default_args=default_args,
