@@ -1,3 +1,10 @@
+options:
+  logging: CLOUD_LOGGING_ONLY  # Ensures Cloud Build logs are sent to Logging, not a GCS bucket
+
 steps:
   - name: 'gcr.io/cloud-builders/gsutil'
-    args: ['cp', 'dags/unified_view_dag.py', 'gs://us-central1-airflow-compose-e13ea8d0-bucket/dags/']
+    args: [
+      'cp',
+      'dags/unified_view_dag.py',
+      'gs://us-central1-airflow-compose-e13ea8d0-bucket/dags/'
+    ]
