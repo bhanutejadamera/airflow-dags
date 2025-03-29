@@ -11,6 +11,7 @@ def log_user_info():
     print(f"DAG triggered by user: {user}")
 
 # Default args
+# Default args
 default_args = {
     'owner': 'airflow',
     'start_date': days_ago(1),
